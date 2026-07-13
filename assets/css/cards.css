@@ -1,0 +1,30 @@
+.card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 24px;
+}
+
+.story-card {
+
+    background: var(--light);
+
+    border-radius: var(--radius-lg);
+
+    padding: 24px;
+}
+
+.metric-card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 20px;
+}
