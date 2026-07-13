@@ -1,0 +1,37 @@
+:root {
+
+    --primary: #042754;
+    --accent: #67b0e8;
+    --secondary: #2788b2;
+    --light: #cae8ff;
+    --border: #d8dde2;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+}
+
+/* Streamlit container */
+
+.block-container {
+
+    max-width: 1400px;
+
+    padding-top: 2rem;
+
+    padding-bottom: 2rem;
+
+    padding-left: 3rem;
+
+    padding-right: 3rem;
+}
+
+/* Global */
+
+html,
+body {
+
+    background: white;
+
+    color: var(--primary);
+}
