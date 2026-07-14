@@ -21,9 +21,6 @@ It should not:
 """
 
 
-
-
-
 import streamlit as st
 
 from datetime import datetime
@@ -65,7 +62,7 @@ def render_navbar(
     else:
         greeting = "Good evening"
 
-        st.markdown(
+    st.markdown(
         f"""
         <div class="navbar">
 
@@ -103,3 +100,6 @@ def render_navbar(
         """,
         unsafe_allow_html=True,
     )
+
+
+
