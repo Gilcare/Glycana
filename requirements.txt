@@ -1,3 +1,10 @@
-plotly
-pymongo
 streamlit
+plotly
+pandas
+numpy
+pymongo
+python-dotenv
+openpyxl
+transformers
+torch
+langchain
