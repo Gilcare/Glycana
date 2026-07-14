@@ -65,7 +65,37 @@ def render_navbar(
     st.markdown(
         f"""
         <div class="navbar">
-        ...
+
+            <div>
+
+                <h2 style="
+                    color:{PRIMARY};
+                    margin-bottom:0;
+                ">
+
+                    {greeting}, {user_name} 👋
+
+                </h2>
+
+
+                <p style="
+                    color:{SECONDARY};
+                    margin-top:4px;
+                ">
+
+                    {page.value}
+
+                </p>
+
+            </div>
+
+
+            <div class="navbar-status">
+
+                🟢 CGM Ready
+
+            </div>
+
         </div>
         """,
         unsafe_allow_html=True,
