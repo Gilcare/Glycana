@@ -1,11 +1,49 @@
-Pages.DASHBOARD
+"""
+Global constants used throughout Traven.
+"""
 
-Pages.GLUCOSE
+from enum import Enum
 
-Pages.INSIGHTS
 
-GlucoseRange.NORMAL
 
-GlucoseRange.HIGH
+class Pages(str, Enum):
 
-GlucoseRange.LOW
+    DASHBOARD = "Dashboard"
+
+    GLUCOSE = "Glucose"
+
+    INSIGHTS = "Insights"
+
+    REPORTS = "Reports"
+
+    SETTINGS = "Settings"
+
+
+
+class UserRole(str, Enum):
+
+    PATIENT = "Patient"
+
+    DOCTOR = "Doctor"
+
+    ADMIN = "Admin"
+
+
+
+class CGMDevice(str, Enum):
+
+    AIDEX_X = "Aidex-X"
+
+    GLUCORX = "GlucoRx"
+
+
+
+class GlucoseStatus(str, Enum):
+
+    NORMAL = "Normal"
+
+    LOW = "Low"
+
+    HIGH = "High"
+
+    CRITICAL = "Critical"
