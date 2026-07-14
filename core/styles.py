@@ -1,5 +1,5 @@
 """
-CSS loader for Traven.
+CSS loader for TravenHealth.
 """
 
 from pathlib import Path
