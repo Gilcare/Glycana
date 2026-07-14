@@ -48,19 +48,7 @@ st.set_page_config(
 load_styles()
 
 
-st.markdown(
-    """
-    <div style="
-        background:#042754;
-        color:white;
-        padding:20px;
-        border-radius:15px;
-    ">
-        Traven CSS Test
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+
 
 
 # ==========================================================
