@@ -5,7 +5,7 @@ from core.settings import (
     PAGE_TITLE,
     PAGE_ICON,
     LAYOUT,
-    INITIAL_SIDEBAR_STATE,
+    SIDEBAR_STATE,
 )
 
 
@@ -35,7 +35,7 @@ st.set_page_config(
 
     layout=LAYOUT,
 
-    initial_sidebar_state=INITIAL_SIDEBAR_STATE,
+    initial_sidebar_state=SIDEBAR_STATE,
 
 )
 
