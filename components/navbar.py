@@ -65,44 +65,41 @@ def render_navbar(
     else:
         greeting = "Good evening"
 
-
-
     st.markdown(
-        f"""
-        <div class="navbar">
+f"""
+<div class="navbar">
 
-            <div>
+    <div>
 
-                <h2 style="
-                    color:{PRIMARY};
-                    margin-bottom:0;
-                ">
+        <h2 style="
+            color:{PRIMARY};
+            margin-bottom:0;
+        ">
 
-                    {greeting}, {user_name} 👋
+            {greeting}, {user_name} 👋
 
-                </h2>
-
-
-                <p style="
-                    color:{SECONDARY};
-                    margin-top:4px;
-                ">
-
-                    {page.value}
-
-                </p>
-
-            </div>
+        </h2>
 
 
-            <div class="navbar-status">
+        <p style="
+            color:{SECONDARY};
+            margin-top:4px;
+        ">
 
-                🟢 CGM Ready
+            {page.value}
 
-            </div>
+        </p>
+
+    </div>
 
 
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    <div class="navbar-status">
+
+        🟢 CGM Ready
+
+    </div>
+
+</div>
+""",
+unsafe_allow_html=True,
+)
