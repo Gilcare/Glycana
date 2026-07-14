@@ -107,3 +107,17 @@ def render_navbar(
     """,
     unsafe_allow_html=True,
 )
+
+
+
+
+name = "Gerald"
+
+st.markdown(
+    f"""
+    <div style="background:#042754;color:white;padding:20px;">
+        Hello {name}
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
