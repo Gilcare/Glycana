@@ -63,9 +63,12 @@ DATE_FORMAT = "%d %b %Y"
 
 
 # ==========================================================
-# Limits
+# Data Limits
 # ==========================================================
 
-MAX_RECENT_READINGS = 50
+# One day of 5-minute CGM readings
+MAX_RECENT_READINGS = 288  #previously set at 50
 
-MAX_INSIGHT_LENGTH = 250
+
+# Maximum size of AI-generated insight cards
+MAX_INSIGHT_CHARACTERS = 250
