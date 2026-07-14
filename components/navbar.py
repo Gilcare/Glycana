@@ -61,21 +61,49 @@ def render_navbar(
 
     else:
         greeting = "Good evening"
-
+        
     st.markdown(
-        """
+        f"""
         <div style="
-            background:#042754;
-            color:white;
-            padding:20px;
-            border-radius:15px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background:white;
+        padding:20px;
+        border-radius:16px;
+        border:1px solid #d8dde2;
         ">
-            TRAVEN NAVBAR TEST
+        
+        <div>
+
+            <h2 style="
+                color:#042754;
+                margin:0;
+            ">
+                {greeting}, {user_name} 👋
+            </h2>
+
+
+            <p style="
+                color:#2788b2;
+                margin:5px 0 0 0;
+            ">
+                {page.value}
+            </p>
+
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
 
-    
 
-    
+        <div style="
+            color:#2788b2;
+            font-weight:600;
+        ">
+
+            🟢 CGM Ready
+
+        </div>
+
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
