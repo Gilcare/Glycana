@@ -23,11 +23,6 @@ It should not:
 
 
 
-"""
-Traven Navbar Component.
-
-Responsible for rendering the top application header.
-"""
 
 import streamlit as st
 
