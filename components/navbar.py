@@ -63,43 +63,47 @@ def render_navbar(
         greeting = "Good evening"
 
     st.markdown(
-        f"""
-        <div class="navbar">
+        "import streamlit as st
 
-            <div>
+from datetime import datetime
 
-                <h2 style="
-                    color:{PRIMARY};
-                    margin-bottom:0;
-                ">
-
-                    {greeting}, {user_name} 👋
-
-                </h2>
+from core.theme import PRIMARY, SECONDARY, BORDER
+from core.constants import Pages
 
 
-                <p style="
-                    color:{SECONDARY};
-                    margin-top:4px;
-                ">
 
-                    {page.value}
+def render_navbar(
+    page: Pages,
+    user_name: str = "User"
+) -> None:
+    """
+    Render the top navigation bar.
 
-                </p>
+    Parameters
+    ----------
+    page:
+        Current active page.
 
-            </div>
+    user_name:
+        Name displayed in greeting.
+    """
+
+    current_time = datetime.now()
+
+    hour = current_time.hour
 
 
-            <div class="navbar-status">
+    # Simple greeting logic
 
-                🟢 CGM Ready
+    if hour < 12:
+        greeting = "Good morning"
 
-            </div>
+    elif hour < 18:
+        greeting = "Good afternoon"
 
-        </div>
-        """,
-        unsafe_allow_html=True,
+    else:
+        greeting = "Good evening"
+
+    st.markdown(
+        "TEST NAVBAR",
     )
-
-
-
