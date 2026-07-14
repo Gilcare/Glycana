@@ -63,5 +63,10 @@ def render_navbar(
         greeting = "Good evening"
 
     st.markdown(
-        "TEST NAVBAR",
+        f"""
+        <div class="navbar">
+        ...
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
