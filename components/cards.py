@@ -88,14 +88,14 @@ def metric_card(
     """
 
     st.markdown(
-        f"""
-        <div class="metric-card">
+    f"""
+    <div class="metric-card">
 
-            <div class="metric-label">
+         <div class="metric-label">
 
                 {icon} {label}
 
-            </div>
+        </div>
 
 
             <div class="metric-value">
@@ -111,9 +111,9 @@ def metric_card(
 
             </div>
 
-        </div>
-        """,
-        unsafe_allow_html=True,
+    </div>
+    """,
+    unsafe_allow_html=True,
     )
 
 
