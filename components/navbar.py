@@ -63,8 +63,8 @@ def render_navbar(
         greeting = "Good evening"
         
     st.markdown(
-        f"""
-        <div style="
+    f"""
+    <div style="
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -72,8 +72,8 @@ def render_navbar(
         padding:20px;
         border-radius:16px;
         border:1px solid #d8dde2;
-        ">
-        
+    ">
+
         <div>
 
             <h2 style="
