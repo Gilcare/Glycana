@@ -31,8 +31,7 @@ from core.theme import PRIMARY, ACCENT, SECONDARY
 def card(
     title: str,
     content: str,
-    icon: str = ""
-) -> None:
+    icon: str = "") -> None:
     """
     Generic Traven card.
     """
