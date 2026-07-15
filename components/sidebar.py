@@ -50,7 +50,7 @@ def render_sidebar(current_page: Pages) -> Pages:
 
         # 2. Brand tagline right below
         st.caption("Smarter diabetes care")
-        st.markdown("---")
+        
 
         # --- Rest of your sidebar navigation code ---
         st.divider()
