@@ -77,6 +77,10 @@ def render_navbar(
     <p>
     {page.value}
     </p>
+
+    <div>
+    🟢 CGM Ready
+    </div>
     
     </div>
     """
