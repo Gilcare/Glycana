@@ -63,23 +63,23 @@ def render_navbar(
         greeting = "Good evening"
         
     navbar_html = f"""
-<div style="
+    <div style="
     background:white;
     padding:20px;
-">
+    ">
 
-<h2 style="
+    <h2 style="
     color:{PRIMARY};
-">
-    {greeting}, {user_name} 👋
-</h2>
+    ">
+     {greeting}, {user_name} 👋
+    </h2>
 
-<p>
+    <p>
     {page.value}
-</p>
-
-</div>
-"""
+    </p>
+    
+    </div>
+    """
 
 
 st.markdown(
