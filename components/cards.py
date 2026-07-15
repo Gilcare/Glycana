@@ -88,7 +88,7 @@ def metric_card2(
 
     st.markdown(
     f"""
-    <div class="metric-card">
+    <div class="metric-card2">
 
          <div class="metric-label">
 
