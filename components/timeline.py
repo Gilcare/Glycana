@@ -21,97 +21,22 @@ It should NOT:
 import streamlit as st
 
 
-def render_timeline(events: list) -> None:
-    """
-    Render a chronological health timeline.
-
-    Parameters
-    ----------
-    events:
-        List of dictionaries containing:
-
-        {
-            "time": "08:30",
-            "title": "Breakfast",
-            "description": "Glucose increased after meal",
-            "status": "normal"
-        }
-
-    """
-
-    if not events:
-        st.info("No events available yet.")
-        return
-
-
-    st.markdown(
-        """
-        <div class="timeline">
-        """,
-        unsafe_allow_html=True,
-    )
-
+def render_timeline(events):
 
     for event in events:
 
-        status = event.get(
-            "status",
-            "normal"
-        )
+        with st.container(border=True):
 
+            left, right = st.columns([1, 5])
 
-        if status == "warning":
-            icon = "🟠"
+            with left:
+                st.caption(event["time"])
 
-        elif status == "critical":
-            icon = "🔴"
+            with right:
+                st.markdown(
+                    f"**{event['title']}**"
+                )
 
-        else:
-            icon = "🟢"
-
-
-        st.markdown(
-            f"""
-            <div class="timeline-item">
-
-                <div class="timeline-dot">
-
-                    {icon}
-
-                </div>
-
-
-                <div class="timeline-content">
-
-                    <div class="timeline-time">
-
-                        {event["time"]}
-
-                    </div>
-
-
-                    <strong>
-
-                        {event["title"]}
-
-                    </strong>
-
-
-                    <p>
-
-                        {event["description"]}
-
-                    </p>
-
-                </div>
-
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-
-    st.markdown(
-        "</div>",
-        unsafe_allow_html=True,
-    )
+                st.write(
+                    event["description"]
+                )
