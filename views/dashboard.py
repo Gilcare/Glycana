@@ -47,18 +47,9 @@ def render():
     # Top Metrics
     # ------------------------------------------------------
 
-    st.markdown(
-    "<b>BEFORE COLUMNS</b>",
-    unsafe_allow_html=True,
-    )
-
     col1, col2, col3, col4 = st.columns(4)
 
-    with col1:
-        st.markdown(
-            "<b>INSIDE COLUMN</b>",
-            unsafe_allow_html=True,
-        )
+    
 
     """ 
     with col1:
@@ -74,7 +65,7 @@ def render():
     with col2:
 
         metric_card(
-            label="Time in Range",
+            label="CTime in Range",
             value="82%",
             description="Today",
             icon="🎯",
