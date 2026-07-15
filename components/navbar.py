@@ -63,21 +63,27 @@ def render_navbar(
         greeting = "Good evening"
         
     navbar_html = f"""
-    <div style="
-    background:white;
-    padding:20px;
-    ">
+    <div class="traven-navbar">
 
-    <h2 style="
-    color:{PRIMARY};
-    ">
-     {greeting}, {user_name} 👋
-    </h2>
+    <div>
 
-    <p>
-    {page.value}
-    </p>
-    
+        <h2>
+            {greeting}, {user_name} 👋
+        </h2>
+
+        <p>
+            {page.value}
+        </p>
+
+    </div>
+
+
+    <div class="traven-status">
+
+        🟢 CGM Ready
+
+    </div>
+
     </div>
     """
 
