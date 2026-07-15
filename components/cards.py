@@ -113,55 +113,6 @@ def metric_card(
 
 
 
-def metric_card2(
-    label: str,
-    value: str,
-    description: str = "",
-    icon: str = ""
-) -> None:
-    """
-    Large number display card.
-
-    Examples:
-    - Current glucose
-    - Time in range
-    - Average glucose
-    """
-
-    st.markdown(
-    f"""
-    <div class="metric-card2">
-
-         <div class="metric-label">
-
-                {icon} {label}
-
-        </div>
-
-
-            <div class="metric-value">
-
-                {value}
-
-            </div>
-
-
-            <div class="metric-description">
-
-                {description}
-
-            </div>
-
-    </div>
-    """,
-    unsafe_allow_html=True,
-    )
-    
-    
-
-
-
-
 
 # ==========================================================
 # Insight Card
@@ -169,6 +120,36 @@ def metric_card2(
 
 
 def insight_card(
+    title: str,
+    message: str
+) -> None:
+    """
+    AI generated insight card.
+    """
+
+    insight_html = f"""
+    <div class="insight-card">
+
+            <h4>
+                🧠 {title}
+            </h4>
+
+
+            <p>
+                {message}
+            </p>
+
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    
+    st.code(insight_html)
+
+    st.markdown(insight_html, 
+                unsafe_allow_html = True,)
+
+def insight_card2(
     title: str,
     message: str
 ) -> None:
