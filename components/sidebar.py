@@ -89,7 +89,7 @@ def render_sidebar(current_page: Pages) -> Pages:
 
         # Sensor status placeholder
 
-        st.markdown("CGM Status")
+        st.markdown("CGM Status 🟢")
 
 
     return selected_page
