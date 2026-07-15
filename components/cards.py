@@ -113,7 +113,7 @@ def metric_card(
 
 
 
-def metric_card2(
+def metric_card(
     label: str,
     value: str,
     description: str = "",
