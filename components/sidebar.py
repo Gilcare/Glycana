@@ -53,7 +53,29 @@ def render_sidebar(current_page: Pages) -> Pages:
         st.markdown("---")
 
         # --- Rest of your sidebar navigation code ---
-        return current_page
+        st.divider()
+
+
+        # Navigation
+
+        selected_page = st.radio(
+            label="Navigation",
+            options=list(Pages),
+            format_func=lambda page: page.value,
+            index=list(Pages).index(current_page),
+            label_visibility="collapsed",
+        )
+
+
+        st.divider()
+
+
+        # Sensor status placeholder
+
+        st.markdown("CGM Status 🟢")
+
+
+    return selected_page
 
 
 
