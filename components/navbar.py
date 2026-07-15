@@ -82,7 +82,7 @@ def render_navbar(
     """
 
 
-st.markdown(
-    navbar_html,
-    unsafe_allow_html=True,
-)
+    st.markdown(
+        navbar_html,
+        unsafe_allow_html=True,
+    )
