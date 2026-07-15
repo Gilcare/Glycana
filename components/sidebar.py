@@ -34,7 +34,31 @@ from core.constants import Pages
 from core.theme import PRIMARY, LIGHT, BORDER
 
 
+import streamlit as st
+
 def render_sidebar(current_page: Pages) -> Pages:
+    """
+    Render the Traven sidebar navigation.
+    """
+
+    with st.sidebar:
+        # 1. Use the local file path string directly
+        st.logo(
+            image="assets/logo.png",
+            icon_image="assets/logo.png"  # Displayed if the sidebar is collapsed
+        )
+
+        # 2. Brand tagline right below
+        st.caption("Smarter diabetes care")
+        st.markdown("---")
+
+        # --- Rest of your sidebar navigation code ---
+        return current_page
+
+
+
+
+def render_sidebar2(current_page: Pages) -> Pages:
     """
     Render the Traven sidebar navigation.
 
