@@ -70,6 +70,40 @@ def card(
 # Metric Card
 # ==========================================================
 
+import streamlit as st
+
+def metric_card(
+    label: str,
+    value: str,
+    description: str = "",
+    icon: str = ""
+) -> None:
+    """
+    Large number display card using native Streamlit elements.
+
+    Examples:
+    - Current glucose
+    - Time in range
+    - Average glucose
+    """
+    # Create the boxed card outline layout
+    with st.container(border=True):
+        
+        # Combine the emoji icon and text string cleanly for the label header
+        # We pass the description to the native 'help' tooltip if it fits well there,
+        # or render it explicitly at the bottom.
+        full_label = f"{icon} {label}" if icon else label
+        
+        st.metric(
+            label=full_label,
+            value=value
+        )
+        
+        # If an additional descriptive subtext is provided, render it cleanly underneath
+        if description:
+            st.caption(description)
+
+
 
 
 
