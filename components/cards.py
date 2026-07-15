@@ -118,34 +118,19 @@ def metric_card(
 # Insight Card
 # ==========================================================
 
-
-
 def insight_card(
     title: str,
-    message: str
+    message: str,
 ) -> None:
     """
-    AI generated insight card.
+    AI-generated insight card.
     """
 
-    st.markdown(
-        f"""
-        <div class="insight-card">
+    with st.container(border=True):
 
-            <h4>
-                🧠 {title}
-            </h4>
+        st.markdown(f"### 🧠 {title}")
 
-
-            <p>
-                {message}
-            </p>
-
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
+        st.write(message)
 
 
 # ==========================================================
