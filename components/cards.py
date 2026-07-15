@@ -28,43 +28,6 @@ from core.theme import PRIMARY, ACCENT, SECONDARY
 # ==========================================================
 
 
-def card(
-    title: str,
-    content: str,
-    icon: str = "") -> None:
-    """
-    Generic Traven card.
-    """
-
-    st.markdown(
-        f"""
-        <div class="card">
-
-            <div class="card-header">
-
-                <span>
-                    {icon}
-                </span>
-
-                <strong>
-                    {title}
-                </strong>
-
-            </div>
-
-
-            <div class="card-content">
-
-                {content}
-
-            </div>
-
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
 
 # ==========================================================
 # Metric Card
