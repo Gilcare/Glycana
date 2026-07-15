@@ -44,8 +44,8 @@ def render_sidebar(current_page: Pages) -> Pages:
     with st.sidebar:
         # 1. Use the local file path string directly
         st.logo(
-            image="assets/logo.png",
-            icon_image="assets/logo.png"  # Displayed if the sidebar is collapsed
+            image="assets/logo 1.png",
+            icon_image="assets/logo 1.png"  # Displayed if the sidebar is collapsed
         )
 
         # 2. Brand tagline right below
