@@ -11,7 +11,7 @@ from core.settings import APP_NAME, APP_VERSION
 from core.theme import TEXT_SECONDARY, BORDER
 
 
-
+"""
 def render_footer() -> None:
     """
     Render the application footer.
@@ -46,3 +46,4 @@ def render_footer() -> None:
         """,
         unsafe_allow_html=True,
     )
+    """
