@@ -45,7 +45,7 @@ st.set_page_config(
 # Load Styling
 # ==========================================================
 
-#load_styles()
+load_styles()
 
 
 
