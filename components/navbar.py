@@ -62,52 +62,30 @@ def render_navbar(
     else:
         greeting = "Good evening"
 
-    
     navbar_html = f"""
     <div style="
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        background:white;
-        border:1px solid #d8dde2;
-        border-radius:18px;
-        padding:20px 24px;
-        margin-bottom:24px;
+    background:white;
+    padding:20px;
     ">
+    
+    <h2 style="
+       color:{PRIMARY};
+    ">
+       {greeting}, {user_name} 👋
+    </h2>
+    
+    <p>
+       {page.value}
+    </p>
 
-        <div>
-
-            <h2 style="
-                margin:0;
-                color:#042754;
-                font-size:28px;
-            ">
-                {greeting}, {user_name} 👋
-            </h2>
-
-            <p style="
-                margin-top:6px;
-                color:#2788b2;
-                font-size:16px;
-            ">
-                {page.value}
-            </p>
-
-        </div>
-
-        <div style="
-            background:#cae8ff;
-            color:#042754;
-            padding:8px 14px;
-            border-radius:999px;
-            font-weight:600;
-        ">
-            🟢 CGM Ready
-        </div>
-
+    <div>
+        🟢 CGM Ready
+    </div>
+    
     </div>
     """
-
+    
+    
     st.markdown(
         navbar_html,
         unsafe_allow_html=True,
