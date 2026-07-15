@@ -90,21 +90,9 @@ def render_sidebar(current_page: Pages) -> Pages:
         # Sensor status placeholder
 
         st.markdown(
-            f"""
-            <div class="sensor-card">
-
-                <strong>
-                    CGM Status
-                </strong>
-
-                <br>
-
-                Not Connected
-
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+            "
+             CGM Status
+            ")
 
 
     return selected_page
