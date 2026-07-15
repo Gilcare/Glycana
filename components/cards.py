@@ -120,8 +120,20 @@ def metric_card(
 # Insight Card
 # ==========================================================
 
-
 def insight_card(
+    title: str,
+    message: str
+) -> None:
+    """
+    AI generated insight card.
+    """
+
+    st.markdown(
+        "<b>Metric Card Test</b>",
+        unsafe_allow_html=True,
+    )
+
+def insight_card1(
     title: str,
     message: str
 ) -> None:
