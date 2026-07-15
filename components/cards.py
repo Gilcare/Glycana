@@ -122,8 +122,7 @@ def metric_card(
 
 def insight_card(
     title: str,
-    message: str
-) -> None:
+    message: str) -> None:
     """
     AI generated insight card.
     """
