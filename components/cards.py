@@ -140,8 +140,7 @@ def insight_card(
             </p>
 
         </div>
-        """,
-    unsafe_allow_html=True,)
+        """
     
     st.code(insight_html)
 
