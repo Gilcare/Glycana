@@ -138,7 +138,35 @@ def insight_card(
 # ==========================================================
 
 
+import streamlit as st
+
 def sensor_card(
+    device_name: str,
+    status: str,
+    connected: bool = False
+) -> None:
+    """
+    CGM device status card using native st.metric.
+    """
+    # 1. Determine the status emoji indicator
+    indicator = "🟢" if connected else "🔴"
+    
+    # 2. Combine indicator and status text for the value field
+    status_value = f"{indicator} {status}"
+    
+    # 3. Optional: Define a semantic delta string for color-coded feedback
+    delta_text = "Connected" if connected else "Disconnected"
+    
+    # 4. Render the native metric component
+    st.metric(
+        label=device_name,
+        value=status_value,
+        delta=delta_text,
+        delta_color="normal" if connected else "inverse"  # Normal: green up, Inverse: red down
+    )
+
+
+def sensor_card2(
     device_name: str,
     status: str,
     connected: bool = False
