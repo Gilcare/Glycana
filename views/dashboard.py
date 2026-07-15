@@ -47,9 +47,20 @@ def render():
     # Top Metrics
     # ------------------------------------------------------
 
+    st.markdown(
+    "<b>BEFORE COLUMNS</b>",
+    unsafe_allow_html=True,
+    )
+
     col1, col2, col3, col4 = st.columns(4)
 
+    with col1:
+        st.markdown(
+            "<b>INSIDE COLUMN</b>",
+            unsafe_allow_html=True,
+        )
 
+    """ 
     with col1:
 
         metric_card(
@@ -57,7 +68,7 @@ def render():
             value="108 mg/dL",
             description="Stable",
             icon="🩸",
-        )
+        )"""
 
 
     with col2:
