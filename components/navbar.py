@@ -63,7 +63,7 @@ def render_navbar(
         greeting = "Good evening"
         
     navbar_html = f"""
-    <div style="
+    <div class="traven-navbar" style="
     background:white;
     padding:20px;
     ">
