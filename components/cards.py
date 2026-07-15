@@ -27,52 +27,48 @@ from core.theme import PRIMARY, ACCENT, SECONDARY
 # Generic Card
 # ==========================================================
 
+def card(
+    title: str,
+    content: str,
+    icon: str = "") -> None:
+    """
+    Generic Traven card.
+    """
+
+    st.markdown(
+        f"""
+        <div class="card">
+
+            <div class="card-header">
+
+                <span>
+                    {icon}
+                </span>
+
+                <strong>
+                    {title}
+                </strong>
+
+            </div>
+
+
+            <div class="card-content">
+
+                {content}
+
+            </div>
+
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 
 
 # ==========================================================
 # Metric Card
 # ==========================================================
-
-
-def metric_card(
-    label: str,
-    value: str,
-    description: str = "",
-    icon: str = ""
-) -> None:
-    """
-    Large number display card.
-
-    Examples:
-    - Current glucose
-    - Time in range
-    - Average glucose
-    """
-
-    html = f"""
-    <div class="metric-card">
-
-    <div class="metric-label">
-        {icon} {label}
-    </div>
-
-    <div class="metric-value">
-        {value}
-    </div>
-
-    <div class="metric-description">
-        {description}
-    </div>
-
-    </div>
-    """
-    
-    st.code(html)
-    
-    st.markdown(
-        html,
-        unsafe_allow_html=True,
-    )
 
 
 
