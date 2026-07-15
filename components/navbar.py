@@ -32,8 +32,7 @@ from core.constants import Pages
 
 def render_navbar(
     page: Pages,
-    user_name: str = "User"
-) -> None:
+    user_name: str = "User") -> None:
     """
     Render the top navigation bar.
 
