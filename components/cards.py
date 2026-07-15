@@ -71,7 +71,7 @@ def card(
 # ==========================================================
 
 
-def metric_card2(
+def metric_card(
     label: str,
     value: str,
     description: str = "",
@@ -117,45 +117,7 @@ def metric_card2(
     
     
 
-def metric_card(
-    label: str,
-    value: str,
-    description: str = "",
-    icon: str = ""
-) -> None:
-    """
-    Large number display card.
 
-    Examples:
-    - Current glucose
-    - Time in range
-    - Average glucose
-    """
-
-    html = f"""
-    <div class="metric-card">
-
-    <div class="metric-label">
-        {icon} {label}
-    </div>
-
-    <div class="metric-value">
-        {value}
-    </div>
-
-    <div class="metric-description">
-        {description}
-    </div>
-
-    </div>
-    """
-    
-    st.code(html)
-    
-    st.markdown(
-        html,
-        unsafe_allow_html=True,
-    )
 
 
 
