@@ -50,8 +50,8 @@ def render():
     col1, col2, col3, col4 = st.columns(4)
 
     
-
-    """ 
+    
+    
     with col1:
 
         metric_card(
@@ -59,13 +59,13 @@ def render():
             value="108 mg/dL",
             description="Stable",
             icon="🩸",
-        )"""
+        )
 
 
     with col2:
 
         metric_card(
-            label="CTime in Range",
+            label="Time in Range",
             value="82%",
             description="Today",
             icon="🎯",
