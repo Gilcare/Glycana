@@ -86,8 +86,7 @@ def metric_card(
     - Average glucose
     """
 
-    metric_card_html = 
-    f"""
+    metric_card_html = f"""
     <div class="metric-card">
 
          <div class="metric-label">
