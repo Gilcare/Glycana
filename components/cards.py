@@ -86,6 +86,55 @@ def metric_card(
     - Average glucose
     """
 
+    metric_card_html = 
+    f"""
+    <div class="metric-card">
+
+         <div class="metric-label">
+
+                {icon} {label}
+
+        </div>
+
+
+            <div class="metric-value">
+
+                {value}
+
+            </div>
+
+
+            <div class="metric-description">
+
+                {description}
+
+            </div>
+
+    </div>
+    """
+    st.markdown(metric_card_html,
+                unsafe_allow_html=True,)
+
+
+
+
+
+
+def metric_card1(
+    label: str,
+    value: str,
+    description: str = "",
+    icon: str = ""
+) -> None:
+    """
+    Large number display card.
+
+    Examples:
+    - Current glucose
+    - Time in range
+    - Average glucose
+    """
+
     st.markdown(
     f"""
     <div class="metric-card">
