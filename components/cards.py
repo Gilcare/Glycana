@@ -127,34 +127,6 @@ def insight_card(
     AI generated insight card.
     """
 
-    insight_html = f"""
-    <div class="insight-card">
-
-            <h4>
-                🧠 {title}
-            </h4>
-
-
-            <p>
-                {message}
-            </p>
-
-        </div>
-        """
-    
-    st.code(insight_html)
-
-    st.markdown(insight_html, 
-                unsafe_allow_html = True,)
-
-def insight_card2(
-    title: str,
-    message: str
-) -> None:
-    """
-    AI generated insight card.
-    """
-
     st.markdown(
         f"""
         <div class="insight-card">
