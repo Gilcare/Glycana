@@ -9,11 +9,11 @@ Controls how the TravenHealth application behaves, e.g:
 These belong here.
 """
 
-APP_NAME = "Glycana"
+APP_NAME = "Traven"
 
 APP_VERSION = "0.1.0"
 
-PAGE_TITLE = "Glycana"
+PAGE_TITLE = "Traven"
 
 PAGE_ICON = "🌊"
 
