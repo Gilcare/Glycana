@@ -18,7 +18,7 @@ from components.charts import (
     time_in_range_chart,
 )
 from components.timeline import render_timeline
-#from components.footer import render_footer
+
 
 from core.constants import Pages
 
@@ -211,4 +211,4 @@ def render():
     st.write("")
 
 
-    #render_footer()
+    
