@@ -44,7 +44,7 @@ def render_sidebar(current_page: pages) -> pages:
     with st.sidebar:
         # 1. Display the logo as text with custom color and Inter font
         st.markdown(
-            '<h1 style="font-family: \'Inter\', sans-serif; color: #67b0e8; font-size: 2rem; margin-bottom: 0;">Traven</h1>', 
+            '<h1 style="font-family: \'Inter\', sans-serif; color: #67b0e8; font-size: 2rem; margin-bottom: 0;">Glycana</h1>', 
             unsafe_allow_html=True
         )
         
