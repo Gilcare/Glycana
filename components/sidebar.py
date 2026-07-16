@@ -36,19 +36,21 @@ from core.theme import PRIMARY, LIGHT, BORDER
 
 import streamlit as st
 
+
 def render_sidebar(current_page: pages) -> pages:
     """
     Render the Traven sidebar navigation.
     """
     with st.sidebar:
-        # 1. Display the logo as text with the specific hex color
+        # 1. Display the logo as text with custom color and Inter font
         st.markdown(
-            '<h1 style="color: #67b0e8; font-size: 2rem; margin-bottom: 0;">Traven</h1>', 
+            '<h1 style="font-family: \'Inter\', sans-serif; color: #67b0e8; font-size: 2rem; margin-bottom: 0;">Traven</h1>', 
             unsafe_allow_html=True
         )
         
+        
         # 2. Brand tagline right below
-        st.caption("smarter diabetes care")
+        st.caption("*by TravenHealth*")
         
         
         
