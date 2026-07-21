@@ -1,48 +1,40 @@
 """
-TravenHealth Application Router.
+Traven Router.
 
-Controls navigation between application views.
+Handles page navigation.
 """
-import streamlit as st
 
 from core.constants import Pages
 
-from views import dashboard
-from views import glucose
-from views import reports
-from views import settings
-from views import insights
+from views import (
+    dashboard,
+    glucose,
+    insights,
+    reports,
+    settings,
+)
 
 
-
-def route(page: Pages):
+def render_page(page: Pages) -> None:
     """
-    Route the user to the selected page.
-
-    Parameters
-    ----------
-    page:
-        Selected application page.
+    Render the selected page.
     """
 
+    routes = {
 
-    if page == Pages.DASHBOARD:
+        Pages.DASHBOARD: dashboard.render,
 
-        dashboard.render()
-   
+        Pages.GLUCOSE: glucose.render,
 
-    if page == Pages.GLUCOSE:
-        glucose.render()
-     
-    if page == Pages.INSIGHTS:
-        insights.render()
+        Pages.INSIGHTS: insights.render,
 
-    if page == Pages.REPORTS:
-        reports.render()
+        Pages.REPORTS: reports.render,
 
-    if page == Pages.SETTINGS:
-        settings.render()
-        
-    else:
-        st.write("")
-        
+        Pages.SETTINGS: settings.render,
+
+    }
+
+    routes.get(
+        page,
+        dashboard.render,
+    )()
