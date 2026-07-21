@@ -1,8 +1,14 @@
-import  streamlit as st
-from core.constants import Pages
+"""
+Glucose View.
+"""
+
+import streamlit as st
+
 
 def render():
-    page= Pages.GLUCOSE
-    st.info("Glucose page under development.")
 
+    st.title("🩸 Glucose")
 
+    st.caption(
+        "Explore your glucose readings and trends."
+    )
