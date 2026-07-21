@@ -3,12 +3,17 @@ Settings View.
 """
 
 import streamlit as st
+from components import render_page_header
 
 
 def render():
 
-    st.title("⚙ Settings")
+    render_page_header(
 
-    st.caption(
-        "Configure Traven."
+        title="Settings",
+
+        subtitle="Configure Traven.",
+
+        icon="⚙",
+
     )
