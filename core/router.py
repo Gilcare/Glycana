@@ -9,6 +9,9 @@ from core.constants import Pages
 
 from views import dashboard
 from views import glucose
+from views import reports
+from views import settings
+from views import insights
 
 
 
