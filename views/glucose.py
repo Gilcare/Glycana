@@ -1,6 +1,4 @@
-
-
-def glucose_render():
+def render():
     render_page_header(
         title="Glucose",
         subtitle="Explore your glucose patterns."
