@@ -1,9 +1,6 @@
+import  streamlit as st
+from core.constants import Pages
 
-
-def settings_render():
-    render_page_header(
-        title="Settings",
-        subtitle="Explore your glucose patterns."
-    )
-
+def render():
+    page= Pages.SETTINGS
     st.info("Settings page under development.")
