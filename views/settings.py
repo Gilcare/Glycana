@@ -1,6 +1,14 @@
-import  streamlit as st
-from core.constants import Pages
+"""
+Settings View.
+"""
+
+import streamlit as st
+
 
 def render():
-    page= Pages.SETTINGS
-    st.info("Settings page under development.")
+
+    st.title("⚙ Settings")
+
+    st.caption(
+        "Configure Traven."
+    )
