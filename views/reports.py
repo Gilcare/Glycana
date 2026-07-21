@@ -3,12 +3,17 @@ Reports View.
 """
 
 import streamlit as st
+from components import render_page_header
 
 
 def render():
 
-    st.title("📄 Reports")
+    render_page_header(
 
-    st.caption(
-        "Generate and export reports."
+        title="Reports",
+
+        subtitle="Generate and export reports.",
+
+        icon="📄",
+
     )
