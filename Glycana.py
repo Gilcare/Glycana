@@ -18,7 +18,7 @@ from components.sidebar import render_sidebar
 from core.constants import Pages
 
 
-from core.router import route
+from core.router import render_page
 
 
 
