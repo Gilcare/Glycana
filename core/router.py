@@ -40,7 +40,7 @@ def route(page: Pages):
     if page == Pages.REPORTS:
         reports.render()
 
-    if page == Page.SETTINGS:
+    if page == Pages.SETTINGS:
         settings.render()
         
     else:
