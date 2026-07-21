@@ -3,7 +3,7 @@ TravenHealth Application Router.
 
 Controls navigation between application views.
 """
-
+import streamlit as st
 
 from core.constants import Pages
 
@@ -31,17 +31,15 @@ def route(page: Pages):
     if page == Pages.GLUCOSE:
         glucose.render()
      
-    
+    if page == Pages.INSIGHTS:
+        insights.render()
+
+    if page == Pages.REPORTS:
+        reports.render()
+
+    if page == Page.SETTINGS:
+        settings.render()
+        
     else:
-
-        # Temporary placeholder
-        # until other pages exist
-        insights_render()
-        reports_render()
-        settings_render()
-
-        """
-        raise NotImplementedError(
-            f"{page.value} page is not available yet."
-        )
-        """
+        st.header("🔌404 !")
+        
