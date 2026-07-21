@@ -1,9 +1,6 @@
+import  streamlit as st
+from core.constants import Pages
 
-
-def report_render():
-    render_page_header(
-        title="Report",
-        subtitle="Explore your glucose patterns."
-    )
-
-    st.info("Report page under development.")
+def render():
+    page= Pages.REPORTS
+    st.info("Reports page under development.")
