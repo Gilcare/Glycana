@@ -1,6 +1,14 @@
-import  streamlit as st
-from core.constants import Pages
+"""
+Reports View.
+"""
+
+import streamlit as st
+
 
 def render():
-    page= Pages.REPORTS
-    st.info("Reports page under development.")
+
+    st.title("📄 Reports")
+
+    st.caption(
+        "Generate and export reports."
+    )
