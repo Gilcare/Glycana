@@ -1,7 +1,14 @@
-import  streamlit as st
-from core.constants import Pages
+"""
+Insights View.
+"""
+
+import streamlit as st
+
 
 def render():
-    page= Pages.INSIGHTS
-    st.info("Insights page under development.")
 
+    st.title("🧠 Insights")
+
+    st.caption(
+        "AI-powered glucose insights."
+    )
