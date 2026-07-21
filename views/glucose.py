@@ -1,3 +1,5 @@
+from core.constants import Pages
+
 def render():
     render_page_header(
         title="Glucose",
