@@ -32,6 +32,13 @@ def route(page: Pages):
         # Temporary placeholder
         # until other pages exist
 
+        glucose_render()
+        insights_render()
+        reports_render()
+        settings_render()
+
+        """
         raise NotImplementedError(
             f"{page.value} page is not available yet."
         )
+        """
