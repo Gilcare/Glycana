@@ -8,6 +8,7 @@ Controls navigation between application views.
 from core.constants import Pages
 
 from views import dashboard
+from views import glucose
 
 
 
@@ -25,14 +26,18 @@ def route(page: Pages):
     if page == Pages.DASHBOARD:
 
         dashboard.render()
+   
 
+    elif:
 
+        page == Pages.GLUCOSE:
+            glucose.render()
+     
+    
     else:
 
         # Temporary placeholder
         # until other pages exist
-
-        glucose_render()
         insights_render()
         reports_render()
         settings_render()
