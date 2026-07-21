@@ -44,5 +44,5 @@ def route(page: Pages):
         settings.render()
         
     else:
-        st.header("🔌404 !")
+        st.write("")
         
