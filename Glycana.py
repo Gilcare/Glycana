@@ -82,7 +82,7 @@ st.session_state.page = selected_page
 # ==========================================================
 
 
-route(
+render_page(
 
     st.session_state.page
 
