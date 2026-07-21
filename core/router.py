@@ -28,10 +28,8 @@ def route(page: Pages):
         dashboard.render()
    
 
-    elif:
-
-        page == Pages.GLUCOSE:
-            glucose.render()
+    if page == Pages.GLUCOSE:
+        glucose.render()
      
     
     else:
