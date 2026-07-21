@@ -1,9 +1,7 @@
-# views/glucose.py
+import  streamlit as st
+from core.constants import Pages
 
-def insight_render():
-    render_page_header(
-        title="Insight",
-        subtitle="Explore your glucose patterns."
-    )
+def render_insights():
+    page= Pages.INSIGHTS
+    st.info("Insights page under development.")
 
-    st.info("Insight page under development.")
