@@ -1,9 +1,8 @@
 from core.constants import Pages
 
 def render():
-    render_navbar(
-        page= Pages.GLUCOSE,
-    )
+    page= Pages.GLUCOSE,
+    
 
     st.info("Glucose page under development.")
 
