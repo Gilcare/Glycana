@@ -3,12 +3,17 @@ Insights View.
 """
 
 import streamlit as st
+from components import render_page_header
 
 
 def render():
 
-    st.title("🧠 Insights")
+    render_page_header(
 
-    st.caption(
-        "AI-powered glucose insights."
+        title="Insights",
+
+        subtitle="AI-powered glucose insights.",
+
+        icon="🧠",
+
     )
