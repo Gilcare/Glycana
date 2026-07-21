@@ -1,3 +1,4 @@
+import  streamlit as st
 from core.constants import Pages
 
 def render():
