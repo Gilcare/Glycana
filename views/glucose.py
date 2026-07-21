@@ -1,9 +1,7 @@
 from core.constants import Pages
 
 def render():
-    page= Pages.GLUCOSE,
-    
-
+    page= Pages.GLUCOSE
     st.info("Glucose page under development.")
 
 
