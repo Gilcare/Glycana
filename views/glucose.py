@@ -1,6 +1,5 @@
 
 #from components import render_page_header
-
 """
 Traven Glucose View.
 
