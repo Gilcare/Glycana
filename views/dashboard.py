@@ -13,10 +13,7 @@ from components.cards import (
     insight_card,
     sensor_card,
 )
-from components.charts import (
-    glucose_chart,
-    time_in_range_chart,
-)
+
 from components.timeline import render_timeline
 
 
@@ -114,54 +111,10 @@ def render():
 
     st.write("")
 
-
-    # ------------------------------------------------------
-    # Charts
-    # ------------------------------------------------------
-
-    left, right = st.columns(
-        [2,1]
+    st.info(
+        "💡 Recommendation\n\n"
+        "Take a 10-minute walk after lunch to reduce the post-meal glucose rise."
     )
 
 
-    with left:
-
-        glucose_chart(
-
-            timestamps=[
-                "08:00",
-                "10:00",
-                "12:00",
-                "14:00",
-                "16:00",
-            ],
-
-            glucose_values=[
-                95,
-                120,
-                165,
-                130,
-                108,
-            ],
-
-        )
-
-
-    with right:
-
-        time_in_range_chart(
-
-            in_range=82,
-
-            high=14,
-
-            low=4,
-
-        )
-
-
-
-    st.write("")
-
-
-   
+  
