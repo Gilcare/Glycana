@@ -111,6 +111,12 @@ def render():
 
     st.write("")
 
+    st.warning(
+        "⚠️ Lunch spike detected at 12:30."
+    )
+
+    st.write("")
+    
     st.info(
         "💡 Recommendation\n\n"
         "Take a 10-minute walk after lunch to reduce the post-meal glucose rise."
