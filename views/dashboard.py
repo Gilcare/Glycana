@@ -54,7 +54,7 @@ def render():
         metric_card(
             label="Current Glucose",
             value="108 mg/dL",
-            description="Stable",
+            description="In Range",
             icon="🩸",
         )
 
