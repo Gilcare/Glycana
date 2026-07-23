@@ -225,23 +225,3 @@ def render() -> None:
             "Coefficient of Variation",
             "27%",
         )
-
-
-
-"""
-import streamlit as st
-from components import render_page_header
-
-
-def render():
-
-    render_page_header(
-
-        title="Insights",
-
-        subtitle="AI-powered glucose insights.",
-
-        icon="🧠",
-
-    )
-"""
