@@ -217,7 +217,7 @@ def render() -> None:
     with col2:
 
         st.metric(
-            "Estimated GMI",
+            "Estimated HbA1C",
             "6.1%",
         )
 
@@ -225,3 +225,23 @@ def render() -> None:
             "Coefficient of Variation",
             "27%",
         )
+
+     st.write("")
+
+     with st.expander("ⓘ What is Glucose Stability (CV)?"):
+         st.markdown(
+             """
+             **Glucose Stability (Coefficient of Variation, CV)** measures how much
+             your glucose levels fluctuate throughout the day.
+             
+             A lower CV generally means your glucose is more stable.
+             
+             ### General guidance
+             
+             - ✅ **Below 36%** — Good glucose stability
+             - ⚠️ **36% or higher** — Greater glucose variability
+             
+             Reducing large swings between highs and lows can improve overall
+             glucose management.
+             """
+         )
