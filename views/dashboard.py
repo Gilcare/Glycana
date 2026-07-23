@@ -204,7 +204,7 @@ def render():
     ]
     """
 
-    render_timeline(events)
+    #render_timeline(events)
 
 
 
