@@ -226,9 +226,9 @@ def render() -> None:
             "27%",
         )
 
-     st.write("")
-
-     with st.expander("ⓘ What is Glucose Stability (CV)?"):
+    st.write("")
+    
+    with st.expander("ⓘ What is Glucose Stability (CV)?"):
          st.markdown(
              """
              **Glucose Stability (Coefficient of Variation, CV)** measures how much
