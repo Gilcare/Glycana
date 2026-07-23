@@ -1,9 +1,5 @@
-"""
-Glucose View.
-"""
 
-import streamlit as st
-from components import render_page_header
+#from components import render_page_header
 
 """
 Traven Glucose View.
@@ -164,27 +160,3 @@ def render() -> None:
             status="Connected",
             connected=True,
         )
-
-
-
-
-
-
-
-
-
-
-
-"""
-def render():
-
-    render_page_header(
-
-        title="Glucose",
-
-        subtitle="Explore your glucose patterns.",
-
-        icon="🩸",
-
-    )
-"""
