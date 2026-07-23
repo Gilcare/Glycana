@@ -13,7 +13,7 @@ Detailed glucose analysis page.
 
 import streamlit as st
 
-#from components.navbar import render_navbar
+from components.navbar import render_navbar
 from components.charts import glucose_chart
 from components.timeline import render_timeline
 from components.cards import (
